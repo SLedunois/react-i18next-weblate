@@ -1,0 +1,6 @@
+{
+    "app": {
+        "edit_app": "Editez le fichier <code>src/App.js</code> et sauvegardez pour recharger la page",
+        "link": "Apprendre React"
+    }
+}

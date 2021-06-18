@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { withTranslation } from 'react-i18next';
+
+import './i18next';
+
+const AppComponent = withTranslation()(App);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Suspense fallback="loading">
+    <AppComponent />
+  </Suspense>,
   document.getElementById('root')
 );
 
